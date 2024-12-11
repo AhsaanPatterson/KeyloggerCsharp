@@ -1,73 +1,55 @@
-<h1>Nessus Vulnerability Management Home Lab</h1>
+<h1>Step-by-Step Guide to Create a Keylogger in C#</h1>
 
 
 <h2>Description</h2>
-This lab will cover vulnerability scanning and vulnerability remediation. These are two of the main steps in the Vulnerability Management Lifecycle. I will be using Nessus Essentials to scan local VMs hosted on VMWare Workstation in order run credentialed scans to discover vulnerabilities, remediate some of the vulnerabilities, then perform a rescan to verify remediation. 
-<br />
-
+This lab will cover dives into the technical aspects of a keylogger written in C# for windows and is intended for educational purposes only.
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>Nessus Vulnerability Management</b> 
+- <b>Microsoft Visual Studio</b> 
 - <b>Oracle Virtual Box</b>
 
-<h2>Environments Used </h2>
-
-- <b>Windows 10</b> (21H2)
-- <b>Windows Server 2019</b> (21H2)
-
 <p align="center">
-Nessus Vulnerability Management Home Lab
+Create a Keylogger in C#
 
-Step 1: Download Virtual Box On the left hand side select your preferred OS and download VirtualBox Platform Packages https://www.virtualbox.org/wiki/Downloads After installing Virtual Box you need to download the Extension Pack on the right hand side.
-
+<p align="center"> 
+Step 1: Install Visual Studio (Community edition is free).
+</br>
+Create a new Console Application project in C#.
+<br />
+<br />
+<p align="center"> 
+Step 2: Add Necessary Namespaces
+</br>
+At the top of your Program.cs, include the following namespaces to access necessary classes and functions:
  <br/>
-<img src="https://imgur.com/lLEVszK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Step 2: Download Windows 10 64 bit
-https://www.microsoft.com/en-us/software-download/windows10ISO
-  <br/>
-<img src="https://imgur.com/y3orJ8b.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/XiPycxv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 
-Step 3: Download Nessus Essentials 
-In order to download you must fill out required below information in order to receive an key via email
-Check your email and click on the button “Download Nessus” 
-You want to download the first option
+<p align="center"> 
+Step 3: Define the Program Namespace and Class
+</br>
+Define your namespace and class in the project
 <br/>
-<img src="https://imgur.com/vUh3kTJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<img src="https://imgur.com/eHOulB7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/zsoyQ8q.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-
-Step 4: Install Nessus
-Double click on the download file and proceed with the installation
-You will select “Continue” until you receive the following screen to install
-  <br/>
-<img src="https://imgur.com/m9qSWpx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<img src="https://imgur.com/bLOaUeW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p align="center"> 
+Step 4: Define Constants and Hook Variables
+</p>
+</br>
+Inside the Program class, declare necessary constants and variable that will be used for setting the keyboard hook:
+ <br/>
+<img src="https://imgur.com/cfxennm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-
-
-
-
-
-Step 5: First opening Nessus
-You want to save the link in your URL for Nessus welcome page for later
-http://localhost:8834/WelcomeToNessus-Install/welcome
-Next you want to proceed with “Connecting via SSL”
-You want to click on Advanced and Proceed to unsafe host
-You will be required to enter relevant information in order to proceed like your license key 
-Once you complete this the URL will begin downloading the plugins
-
- <img src="https://imgur.com/baEO3xw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
- <img src="https://imgur.com/riOv6JP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
- <img src="https://imgur.com/vI60j7n.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>  
- 
- <br />
+<p align="center"> 
+Step 5: Implement the Main Method
+</p>
+</br>
+Create the Main method where you'll set the hook and run the application:
+<img src="https://imgur.com/rjtUNV8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 Step 6: Setup Virtual Machine
 Open VirtualBox.
